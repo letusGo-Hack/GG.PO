@@ -13,7 +13,7 @@ struct GGPOApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
         .modelContainer(for: Item.self)
     }

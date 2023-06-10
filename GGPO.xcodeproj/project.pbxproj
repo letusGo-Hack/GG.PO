@@ -23,6 +23,8 @@
 		688B0D8D2A343CF800D5F68E /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8B2A343CF800D5F68E /* Champion.swift */; };
 		688B0D8F2A343DD700D5F68E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8E2A343DD700D5F68E /* User.swift */; };
 		688B0D902A343DD700D5F68E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8E2A343DD700D5F68E /* User.swift */; };
+		7D378E932A3478AD000250AE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E922A3478AC000250AE /* WelcomeView.swift */; };
+		7D378E952A347C7A000250AE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E942A347C7A000250AE /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		688B0D802A342E2900D5F68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		688B0D8B2A343CF800D5F68E /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		688B0D8E2A343DD700D5F68E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7D378E922A3478AC000250AE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7D378E942A347C7A000250AE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				688B0D882A343CB800D5F68E /* ViewModel */,
 				688B0D872A343CB100D5F68E /* Model */,
 				688B0D302A341E7200D5F68E /* ContentView.swift */,
+				7D378E922A3478AC000250AE /* WelcomeView.swift */,
+				7D378E942A347C7A000250AE /* ProfileView.swift */,
 				688B0D322A341E7300D5F68E /* Assets.xcassets */,
 				688B0D372A341E7300D5F68E /* Item.swift */,
 				688B0D342A341E7300D5F68E /* Preview Content */,
@@ -284,9 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				688B0D8C2A343CF800D5F68E /* Champion.swift in Sources */,
+				7D378E932A3478AD000250AE /* WelcomeView.swift in Sources */,
 				688B0D312A341E7200D5F68E /* ContentView.swift in Sources */,
 				688B0D382A341E7300D5F68E /* Item.swift in Sources */,
 				688B0D8F2A343DD700D5F68E /* User.swift in Sources */,
+				7D378E952A347C7A000250AE /* ProfileView.swift in Sources */,
 				688B0D2F2A341E7200D5F68E /* GGPOApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
