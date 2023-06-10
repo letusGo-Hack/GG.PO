@@ -46,7 +46,7 @@ struct ChampionTierWidgetExtentsionEntryView : View {
     var body: some View {
         VStack {
             
-            ForEach(entry.champions[0...3], id: \.name) { champion in
+            ForEach(entry.champions, id: \.name) { champion in
                 ChampionRow(champion: champion)
                 Divider()
             }
@@ -54,10 +54,10 @@ struct ChampionTierWidgetExtentsionEntryView : View {
             Spacer()
             
             LineButtonSet(selectedLine: $selectedLine)
+                .tint(.gray)
         }
         .padding()
         .containerBackground(.fill.tertiary, for: .widget)
-        
     }
 }
 
@@ -77,10 +77,10 @@ struct ChampionTierWidgetExtentsion: Widget {
     ChampionTierWidgetExtentsion()
 } timeline: {
     ChampionEntry(date: .now, champions: [
-        Champion(name: "Leona", tier: 1, line: "Support"),
-        Champion(name: "Nar", tier: 3, line: "Top"),
-        Champion(name: "Leona", tier: 1, line: "Support"),
-        Champion(name: "Nar", tier: 3, line: "Top")
+        Champion(name: "Poppy", tier: 1, line: "Top"),
+        Champion(name: "Renekton", tier: 2, line: "Top"),
+        Champion(name: "Jax", tier: 3, line: "Top"),
+        Champion(name: "Maokai", tier: 4, line: "Top")
     ])
 }
 

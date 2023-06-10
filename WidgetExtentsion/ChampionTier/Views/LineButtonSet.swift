@@ -8,19 +8,19 @@
 import SwiftUI
 
 enum Line: String {
-    case top
-    case jungle
-    case mid
-    case bot
-    case support
+    case top = "top"
+    case jungle = "jungle"
+    case middle = "middle"
+    case bottom = "bottom"
+    case support = "utility"
     
     // TODO: 실제 아이콘으로 변경
     var selected: String {
-        return "star.fill"
+        return "icon-position-\(self.rawValue)"
     }
     
     var unselected: String {
-        return "star"
+        return "icon-position-\(self.rawValue)-disabled"
     }
 
 }
@@ -28,7 +28,7 @@ enum Line: String {
 struct LineButtonSet: View {
     
     @Binding var selectedLine: Line
-    let lines: [Line] = [.top, .jungle, .mid, .bot, .support]
+    let lines: [Line] = [.top, .jungle, .middle, .bottom, .support]
     
     var body: some View {
         
@@ -38,11 +38,10 @@ struct LineButtonSet: View {
                     selectedLine = line
                 }, label: {
                     RoundedRectangle(cornerRadius: 5, style: .continuous)
-                        .fill(self.getFillColor(line))
                         .stroke(.blue)
                         .frame(width: 50, height: 50)
                         .overlay(alignment: .center) {
-                            Image(systemName: self.getImageName(line))
+                            Image(self.getImageName(line))
                                 .resizable()
                                 .tint(.yellow)
                                 .frame(width: 40, height: 40)
@@ -52,15 +51,7 @@ struct LineButtonSet: View {
             }
         }
     }
-    
-    private func getFillColor(_ line: Line) -> Color {
-        if line == self.selectedLine {
-            return .blue
-        } else {
-            return .white
-        }
-    }
-    
+        
     private func getImageName(_ line: Line) -> String {
         if line == self.selectedLine {
             return line.selected
@@ -71,5 +62,5 @@ struct LineButtonSet: View {
 }
 
 #Preview {
-    LineButtonSet(selectedLine: Binding.constant(.bot))
+    LineButtonSet(selectedLine: Binding.constant(.support))
 }

@@ -13,12 +13,16 @@ struct ChampionRow: View {
     var body: some View {
         HStack {
             
-            Circle()
-                .fill(.blue)
+            Image(champion.name)
+                .resizable()
+                .clipped()
+                .clipShape(Circle())
                 .frame(width: 50, height: 50)
                 .padding()
             
-            Text(champion.name).font(.title)
+            Text(champion.name)
+                .font(.title3)
+                .fontWeight(.medium)
             
             Spacer()
             
@@ -42,5 +46,5 @@ struct ChampionRow: View {
 }
 
 #Preview {
-    ChampionRow(champion: Champion(name: "Leona", tier: 1, line: "Support"))
+    ChampionRow(champion: Champion(name: "Jax", tier: 1, line: "Support"))
 }
