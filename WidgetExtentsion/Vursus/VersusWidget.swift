@@ -23,9 +23,10 @@ struct VersusProvider: TimelineProvider {
        
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 3 {
+        // 0 1 2 3
+        for hourOffset in 0 ..< 11 {
             let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
-            let entry = VersusEntry(date: entryDate, emoji: "😀", duration: Double(Double(hourOffset) / 2), widgetScreen: context.displaySize)
+            let entry = VersusEntry(date: entryDate, emoji: "😀", duration: Double(Double(hourOffset) / 5), widgetScreen: context.displaySize)
             entries.append(entry)
         }
 
