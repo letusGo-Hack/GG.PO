@@ -8,7 +8,6 @@
 import Foundation
 import SwiftData
 
-@Model
 final class Champion {
     var name: String
     var tier: Int
