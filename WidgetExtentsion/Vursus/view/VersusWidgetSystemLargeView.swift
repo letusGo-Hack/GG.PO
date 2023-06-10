@@ -18,23 +18,48 @@ struct VersusWidgetSystemLargeView: View {
         
         ZStack {
             ZStack {
-                Image("galio")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: width, height: height)
-                    .clipShape(Trapezium(offset: 1 - entry.duration, corner: .bottomRight))
-                Image("lulu")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: width, height: height)
-                    .clipShape(Trapezium(offset: entry.duration, corner: .topLeft ))
-            }
-            Button {
-                WidgetCenter.shared.reloadTimelines(ofKind: "VersusWidget")
-            } label: {
-                Image("versus-icon")
-                    .resizable()
-                    .frame(width: 40,height: 40)
+                if entry.duration <= 1 {
+                    Image("galio")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: height)
+                        .clipShape(Trapezium(offset: 1 - entry.duration <= 1 ? 1 - entry.duration : 1, corner: .bottomRight))
+                    Image("lulu")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: height)
+                        .clipShape(Trapezium(offset: entry.duration <= 1 ? entry.duration : 1, corner: .topLeft ))
+                    
+                    Button {
+                        WidgetCenter.shared.reloadTimelines(ofKind: "VersusWidget")
+                    } label: {
+                        Image("versus-icon")
+                            .resizable()
+                            .frame(width: 40,height: 40)
+                    }
+                }
+                
+                if entry.duration >= 1 {
+                    ZStack {
+                        Image("galio")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: width, height: height)
+                            .clipShape(Trapezium(offset: 1 - (entry.duration - 1), corner: .bottomRight))
+                        
+                        Image("lulu")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: width, height: height)
+                            .clipShape(Trapezium(offset: 1 - (entry.duration - 1), corner: .topLeft ))
+                    }
+
+                        HStack() {
+                            Text("망함")
+                                .background(.white)
+                                .font(.system(size: 50,weight: .bold))
+                        }
+                }
             }
         }
     }
