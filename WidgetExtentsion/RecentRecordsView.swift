@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct RecentRecordsView: View {
+    var entry: RecentProvider.Entry
+    let columns: [GridItem] = [
+        GridItem(.flexible(minimum: 32), spacing: 8),
+        GridItem(.flexible(minimum: 32), spacing: 8),
+        GridItem(.flexible(minimum: 32), spacing: 8),
+        GridItem(.flexible(minimum: 32), spacing: 8),
+        GridItem(.flexible(minimum: 32), spacing: 8)
+    ]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LazyVGrid(columns: columns, alignment: .leading, spacing: 6) {
+            ForEach(entry.records, id: \.id) { i in
+                RoundedRectangle(cornerRadius: 4)
+                    .fill(i.isWin ? .blue : .red)
+                    .frame(height: 32)
+            }
+        }
     }
 }
 
 #Preview {
-    RecentRecordsView()
+    RecentRecordsView(entry: RecentEntry(date: .now, records: [Record(date: .now, isWin: true)]))
 }

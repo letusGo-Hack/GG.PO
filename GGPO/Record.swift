@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+public struct Record: Identifiable, Hashable {
+    let date: Date
+    var isWin: Bool
+
+    public var id: UUID = UUID()
+}
