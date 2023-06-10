@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7F56802A344DDA00C1A742 /* RecentRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F567E2A344DD300C1A742 /* RecentRecordsView.swift */; };
+		2E7F56812A344DDC00C1A742 /* RecentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F56772A343C2A00C1A742 /* RecentInfoView.swift */; };
+		2E7F56822A344DDF00C1A742 /* RecentWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F567C2A34485300C1A742 /* RecentWidgetExtension.swift */; };
+		2E7F56842A344FDB00C1A742 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F56832A344FDB00C1A742 /* Record.swift */; };
+		2E7F56862A34502000C1A742 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F56832A344FDB00C1A742 /* Record.swift */; };
+		2E7F56882A34515400C1A742 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F56872A34515400C1A742 /* Date+Extension.swift */; };
+		2E7F56892A34521600C1A742 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F56872A34515400C1A742 /* Date+Extension.swift */; };
+		68760CAE2A34546E00FD9A21 /* Trapezium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68760CAD2A34546E00FD9A21 /* Trapezium.swift */; };
+		68760CAF2A34546E00FD9A21 /* Trapezium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68760CAD2A34546E00FD9A21 /* Trapezium.swift */; };
 		688B0D2F2A341E7200D5F68E /* GGPOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D2E2A341E7200D5F68E /* GGPOApp.swift */; };
 		688B0D312A341E7200D5F68E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D302A341E7200D5F68E /* ContentView.swift */; };
 		688B0D332A341E7300D5F68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688B0D322A341E7300D5F68E /* Assets.xcassets */; };
@@ -16,19 +25,24 @@
 		688B0D762A342E2800D5F68E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688B0D462A341E9D00D5F68E /* SwiftUI.framework */; };
 		688B0D792A342E2800D5F68E /* WidgetExtentsionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D782A342E2800D5F68E /* WidgetExtentsionBundle.swift */; };
 		688B0D7B2A342E2800D5F68E /* WidgetExtentsionLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D7A2A342E2800D5F68E /* WidgetExtentsionLiveActivity.swift */; };
-		688B0D7D2A342E2800D5F68E /* WidgetExtentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D7C2A342E2800D5F68E /* WidgetExtentsion.swift */; };
 		688B0D7F2A342E2900D5F68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688B0D7E2A342E2900D5F68E /* Assets.xcassets */; };
 		688B0D832A342E2900D5F68E /* WidgetExtentsionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 688B0D742A342E2800D5F68E /* WidgetExtentsionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		688B0D8C2A343CF800D5F68E /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8B2A343CF800D5F68E /* Champion.swift */; };
 		688B0D8D2A343CF800D5F68E /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8B2A343CF800D5F68E /* Champion.swift */; };
 		688B0D8F2A343DD700D5F68E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8E2A343DD700D5F68E /* User.swift */; };
 		688B0D902A343DD700D5F68E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B0D8E2A343DD700D5F68E /* User.swift */; };
+
 		7D378E882A344D45000250AE /* ChampionTierWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E872A344D45000250AE /* ChampionTierWidget.swift */; };
 		7D378E892A344D45000250AE /* ChampionTierWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E872A344D45000250AE /* ChampionTierWidget.swift */; };
 		7D378E8D2A34564B000250AE /* ChampionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E8C2A34564B000250AE /* ChampionRow.swift */; };
 		7D378E8E2A34564B000250AE /* ChampionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E8C2A34564B000250AE /* ChampionRow.swift */; };
 		7D378E902A345687000250AE /* LineButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E8F2A345687000250AE /* LineButtonSet.swift */; };
 		7D378E912A345687000250AE /* LineButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D378E8F2A345687000250AE /* LineButtonSet.swift */; };
+
+		68946BF92A3442D00090207F /* VersusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68946BF82A3442D00090207F /* VersusWidget.swift */; };
+		68946BFA2A3442D00090207F /* VersusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68946BF82A3442D00090207F /* VersusWidget.swift */; };
+		68946BFC2A3445B80090207F /* VersusWidgetSystemLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68946BFB2A3445B80090207F /* VersusWidgetSystemLargeView.swift */; };
+		68946BFD2A3445B90090207F /* VersusWidgetSystemLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68946BFB2A3445B80090207F /* VersusWidgetSystemLargeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +70,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E7F56772A343C2A00C1A742 /* RecentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentInfoView.swift; sourceTree = "<group>"; };
+		2E7F567C2A34485300C1A742 /* RecentWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentWidgetExtension.swift; sourceTree = "<group>"; };
+		2E7F567E2A344DD300C1A742 /* RecentRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRecordsView.swift; sourceTree = "<group>"; };
+		2E7F56832A344FDB00C1A742 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		2E7F56872A34515400C1A742 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		68760CAD2A34546E00FD9A21 /* Trapezium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapezium.swift; sourceTree = "<group>"; };
 		688B0D2B2A341E7200D5F68E /* GGPO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGPO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		688B0D2E2A341E7200D5F68E /* GGPOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGPOApp.swift; sourceTree = "<group>"; };
 		688B0D302A341E7200D5F68E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,14 +87,18 @@
 		688B0D742A342E2800D5F68E /* WidgetExtentsionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtentsionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		688B0D782A342E2800D5F68E /* WidgetExtentsionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtentsionBundle.swift; sourceTree = "<group>"; };
 		688B0D7A2A342E2800D5F68E /* WidgetExtentsionLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtentsionLiveActivity.swift; sourceTree = "<group>"; };
-		688B0D7C2A342E2800D5F68E /* WidgetExtentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtentsion.swift; sourceTree = "<group>"; };
 		688B0D7E2A342E2900D5F68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		688B0D802A342E2900D5F68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		688B0D8B2A343CF800D5F68E /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		688B0D8E2A343DD700D5F68E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+
 		7D378E872A344D45000250AE /* ChampionTierWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTierWidget.swift; sourceTree = "<group>"; };
 		7D378E8C2A34564B000250AE /* ChampionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRow.swift; sourceTree = "<group>"; };
 		7D378E8F2A345687000250AE /* LineButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButtonSet.swift; sourceTree = "<group>"; };
+
+		68946BF82A3442D00090207F /* VersusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusWidget.swift; sourceTree = "<group>"; };
+		68946BFB2A3445B80090207F /* VersusWidgetSystemLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusWidgetSystemLargeView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +121,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E7F56792A3447D100C1A742 /* RecentWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2E7F567C2A34485300C1A742 /* RecentWidgetExtension.swift */,
+				2E7F567A2A3447F900C1A742 /* Views */,
+			);
+			name = RecentWidget;
+			sourceTree = "<group>";
+		};
+		2E7F567A2A3447F900C1A742 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E7F56772A343C2A00C1A742 /* RecentInfoView.swift */,
+				2E7F567E2A344DD300C1A742 /* RecentRecordsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		688B0D222A341E7200D5F68E = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +167,10 @@
 				688B0D872A343CB100D5F68E /* Model */,
 				688B0D302A341E7200D5F68E /* ContentView.swift */,
 				688B0D322A341E7300D5F68E /* Assets.xcassets */,
+				2E7F56832A344FDB00C1A742 /* Record.swift */,
 				688B0D372A341E7300D5F68E /* Item.swift */,
 				688B0D342A341E7300D5F68E /* Preview Content */,
+				2E7F56872A34515400C1A742 /* Date+Extension.swift */,
 			);
 			path = GGPO;
 			sourceTree = "<group>";
@@ -152,9 +196,10 @@
 			isa = PBXGroup;
 			children = (
 				7D378E8A2A344D4F000250AE /* ChampionTier */,
+				2E7F56792A3447D100C1A742 /* RecentWidget */,
+				68946BF72A34429A0090207F /* Vursus */,
 				688B0D782A342E2800D5F68E /* WidgetExtentsionBundle.swift */,
 				688B0D7A2A342E2800D5F68E /* WidgetExtentsionLiveActivity.swift */,
-				688B0D7C2A342E2800D5F68E /* WidgetExtentsion.swift */,
 				688B0D7E2A342E2900D5F68E /* Assets.xcassets */,
 				688B0D802A342E2900D5F68E /* Info.plist */,
 			);
@@ -192,6 +237,7 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+
 		7D378E8A2A344D4F000250AE /* ChampionTier */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +254,24 @@
 				7D378E8F2A345687000250AE /* LineButtonSet.swift */,
 			);
 			path = Views;
+
+		68946BF72A34429A0090207F /* Vursus */ = {
+			isa = PBXGroup;
+			children = (
+				68946BFE2A3445BD0090207F /* view */,
+				68946BF82A3442D00090207F /* VersusWidget.swift */,
+			);
+			path = Vursus;
+			sourceTree = "<group>";
+		};
+		68946BFE2A3445BD0090207F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				68946BFB2A3445B80090207F /* VersusWidgetSystemLargeView.swift */,
+				68760CAD2A34546E00FD9A21 /* Trapezium.swift */,
+			);
+			path = view;
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,14 +375,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				7D378E882A344D45000250AE /* ChampionTierWidget.swift in Sources */,
+
+				2E7F56882A34515400C1A742 /* Date+Extension.swift in Sources */,
+
 				688B0D8C2A343CF800D5F68E /* Champion.swift in Sources */,
 				688B0D312A341E7200D5F68E /* ContentView.swift in Sources */,
+				68946BFC2A3445B80090207F /* VersusWidgetSystemLargeView.swift in Sources */,
 				688B0D382A341E7300D5F68E /* Item.swift in Sources */,
+
 				7D378E8D2A34564B000250AE /* ChampionRow.swift in Sources */,
+
+				2E7F56842A344FDB00C1A742 /* Record.swift in Sources */,
+
 				688B0D8F2A343DD700D5F68E /* User.swift in Sources */,
+				68760CAE2A34546E00FD9A21 /* Trapezium.swift in Sources */,
 				688B0D2F2A341E7200D5F68E /* GGPOApp.swift in Sources */,
+
 				7D378E902A345687000250AE /* LineButtonSet.swift in Sources */,
+
+				68946BF92A3442D00090207F /* VersusWidget.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,13 +405,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D378E892A344D45000250AE /* ChampionTierWidget.swift in Sources */,
+				2E7F56812A344DDC00C1A742 /* RecentInfoView.swift in Sources */,
+				2E7F56802A344DDA00C1A742 /* RecentRecordsView.swift in Sources */,
+				2E7F56822A344DDF00C1A742 /* RecentWidgetExtension.swift in Sources */,
+				688B0D792A342E2800D5F68E /* WidgetExtentsionBundle.swift in Sources */,
+				2E7F56862A34502000C1A742 /* Record.swift in Sources */,
+				2E7F56892A34521600C1A742 /* Date+Extension.swift in Sources */,
 				688B0D8D2A343CF800D5F68E /* Champion.swift in Sources */,
 				688B0D792A342E2800D5F68E /* WidgetExtentsionBundle.swift in Sources */,
+				68946BFD2A3445B90090207F /* VersusWidgetSystemLargeView.swift in Sources */,
 				688B0D7D2A342E2800D5F68E /* WidgetExtentsion.swift in Sources */,
 				7D378E8E2A34564B000250AE /* ChampionRow.swift in Sources */,
 				688B0D902A343DD700D5F68E /* User.swift in Sources */,
+				68760CAF2A34546E00FD9A21 /* Trapezium.swift in Sources */,
 				688B0D7B2A342E2800D5F68E /* WidgetExtentsionLiveActivity.swift in Sources */,
 				7D378E912A345687000250AE /* LineButtonSet.swift in Sources */,
+				68946BFA2A3442D00090207F /* VersusWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +563,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GGPO/Preview Content\"";
+				DEVELOPMENT_TEAM = XW996HTK32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -505,6 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GGPO/Preview Content\"";
+				DEVELOPMENT_TEAM = XW996HTK32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -532,6 +621,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XW996HTK32;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetExtentsion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtentsion;
@@ -558,6 +648,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XW996HTK32;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetExtentsion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtentsion;

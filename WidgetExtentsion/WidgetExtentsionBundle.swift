@@ -12,5 +12,9 @@ import SwiftUI
 struct WidgetExtentsionBundle: WidgetBundle {
     var body: some Widget {
         ChampionTierWidgetExtentsion()
+        RecentWidgetExtension()
+        WidgetExtentsion()
+        VersusWidget()
+        WidgetExtentsionLiveActivity()
     }
 }
